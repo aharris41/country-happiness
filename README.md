@@ -1,1 +1,1 @@
-This project analyzes the relationship between various parameters that influences the happiness of a country. A correlation matrix was made in collaboration to determine the most highly correlated variables 
+This project analyzes the relationship between various parameters that influences the happiness of a country. A Principal Component Analysis (PCA), 
