@@ -43,7 +43,7 @@ df = pd.DataFrame(rows, columns=header)
 #allcolumnsnumerical = ['Country', 'happiness_score', 'gdp_per_capita', 'family', 'health', 'freedom', 'generosity', 'government_trust', 'dystopia_residual', 'continent', 'Year', 'social_support', 'cpi_score']
 
 numerical_col1 = ['gdp_per_capita', 'happiness_score', 'health','freedom'] # Parameters we are analayzing wrt to each other or to general happiness
-# Looking to find what has the largest variance i think idk
+# Looking to find what has the largest variance 
 # Get to 2D
 
 scaler = StandardScaler()
@@ -79,7 +79,7 @@ x1_train, x1_test, y1_train, y1_test = train_test_split(x1, y1, test_size = 0.2,
 
 # Linear regression model for GDP and happiness, as well as the line for linear regression
 lr_1 = LinearRegression(fit_intercept = True)
-lr_1.fit(x1_train, y1_train) # Use training data next time
+lr_1.fit(x1_train, y1_train) 
 y1_prediction = lr_1.predict(x1_test) # Predicts happiness scores based on GDP by taking in testing data
 
 # Getting linear regression line
@@ -171,8 +171,8 @@ print(correlation_matrix)
 
 # PCA was reduced to 2 variables
 # Creating a scatter plot and biplot to show direction of the arrows, as well as creating the arrows
-#plt.scatter(principal_components1[:, 0], principal_components1[:, 1], color = 'c') # 4D EV
-#plt.scatter(principal_components2[:, 0], principal_components2[:, 1], color = '#F7BF6E') # 2D EV
+#plt.scatter(principal_components1[:, 0], principal_components1[:, 1], color = 'c') # 4D Eigenvector
+#plt.scatter(principal_components2[:, 0], principal_components2[:, 1], color = '#F7BF6E') # 2D Eigenvector
 
 
 # Biplot (PCA 1)
