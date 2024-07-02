@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Nov  2 15:42:30 2023
 
 @author: alexandra
 """
@@ -295,7 +294,6 @@ Health vs Freedom:
     Cluster 4 implies countries with high levels of freedom and high levels of health
     
     In general: can interpret this as countries with high health, high freedom --> happier, more developed countries
-    low
 """
 
 file.close() # Closes file
